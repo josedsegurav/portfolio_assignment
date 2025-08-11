@@ -1,0 +1,1 @@
+export { HeroImageComponent } from './heroImage'
