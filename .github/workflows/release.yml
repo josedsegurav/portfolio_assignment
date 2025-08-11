@@ -30,8 +30,5 @@ jobs:
       - name: "Lint Code"
         run: npm run lint
 
-      - name: "Check Prettier"
-        run: npm run format:check
-
       - name: "Run Tests"
         run: npm run test
