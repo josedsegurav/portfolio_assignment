@@ -12,11 +12,11 @@ const StyledText = styled.p<Omit<TextProps, 'content'>>`
   font-size: ${({ $size }) => {
     switch ($size) {
       case 'small':
-        return '12px'
+        return '2em'
       case 'large':
-        return '16px'
+        return '6em'
       default:
-        return '14px' // medium
+        return '4em' // medium
     }
   }};
 

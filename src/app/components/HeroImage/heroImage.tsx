@@ -157,6 +157,10 @@ export const HeroImageComponent = ({
   centered = false,
   testID = 'hero-container',
   disabled = false,
+  title,
+  subtitle,
+  buttonLabel,
+  heroOnClick,
 }: HeroImageProps) => {
   return (
     <HeroContainer
@@ -170,13 +174,14 @@ export const HeroImageComponent = ({
           <HeroImage src={src} alt={alt} data-loading={!src} />
           {overlay && <HeroOverlay $show={overlay} />}
           <HeroContent centered={centered}>
-            <HeroTitle>Hero Title</HeroTitle>
-            <HeroSubtitle>Subtitle goes here</HeroSubtitle>
+            <HeroTitle>{title}</HeroTitle>
+            <HeroSubtitle>{subtitle}</HeroSubtitle>
             <Button
               disabled={disabled}
-              label="Call to Action"
+              label={buttonLabel}
               $size="large"
               $primary={true}
+              onClick={heroOnClick}
             />
           </HeroContent>
         </>

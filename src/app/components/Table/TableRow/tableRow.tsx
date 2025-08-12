@@ -19,7 +19,7 @@ const StyledTableRow = styled.tr<Omit<TableRowProps, 'children'>>`
 
   /* Disabled state */
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : '')};
 `
 
 export const TableRow = ({

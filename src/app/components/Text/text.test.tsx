@@ -28,8 +28,8 @@ describe('Text Component', () => {
 
   it('applies different sizes correctly', () => {
     const sizeTests = [
-      { size: 'large' as const, expectedFontSize: '16px' },
-      { size: 'small' as const, expectedFontSize: '12px' },
+      { size: 'large' as const, expectedFontSize: '6em' },
+      { size: 'small' as const, expectedFontSize: '2em' },
     ]
 
     sizeTests.forEach(({ size, expectedFontSize }, index) => {

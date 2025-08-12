@@ -47,7 +47,7 @@ const StyledTableHeader = styled.th<Omit<TableHeaderProps, 'content'>>`
 
   /* Disabled state */
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : '')};
 `
 
 export const TableHeader = ({

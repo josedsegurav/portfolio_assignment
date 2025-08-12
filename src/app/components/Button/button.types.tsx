@@ -10,4 +10,6 @@ export interface ButtonProps {
   label: string
   /** Is the button disabled? */
   disabled?: boolean
+
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }

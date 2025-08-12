@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  segura_jose_coding_assignment14:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: segura_jose_final_site
+    ports:
+      - '5575:3000'
+    container_name: segura_jose_coding_assignment14
+    environment:
+      - NODE_ENV=production
+    restart: 'no' # prevent auto-restart
+    remove: true

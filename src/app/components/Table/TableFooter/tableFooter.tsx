@@ -5,6 +5,7 @@ const StyledTableFooter = styled.tfoot<Omit<TableFooterProps, 'content'>>`
   display: table-footer-group;
   border-top: 2px solid #e5e7eb;
   padding: 1rem;
+  text-align: center;
   background-color: ${({ $backgroundColor }) => $backgroundColor || '#f0f0f0'};
 
   padding: ${({ $size }) => {

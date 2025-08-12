@@ -20,4 +20,12 @@ export interface HeroImageProps extends HeroContainerProps {
 
   /** Whether the content should be centered */
   centered?: boolean
+
+  title?: string
+
+  subtitle?: string
+
+  buttonLabel: string
+
+  heroOnClick: () => void
 }

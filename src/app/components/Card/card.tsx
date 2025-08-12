@@ -8,6 +8,7 @@ const Card = styled.div<CardProps>`
   border: 1px solid #e5e7eb;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  // width: 25%;
 
   /* Shadow variants */
   box-shadow: ${({ shadow }) => {
@@ -64,7 +65,7 @@ const Card = styled.div<CardProps>`
 const CardImage = styled.img`
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
 

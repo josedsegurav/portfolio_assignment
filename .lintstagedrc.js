@@ -1,10 +1,10 @@
 import { relative } from 'path'
 
 const buildEslintCommand = (filenames) =>
-  `next lint --fix --file ${filenames
-    .map((f) => relative(process.cwd(), f))
-    .join(' --file ')}`
+  `eslint --config eslint.config.mjs --fix ${filenames
+    .map((f) => `"${relative(process.cwd(), f)}"`)
+    .join(' ')}`
 
 export default {
-  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand, 'prettier --write'],
 }
