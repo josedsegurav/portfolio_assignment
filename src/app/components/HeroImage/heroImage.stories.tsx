@@ -41,6 +41,8 @@ export const Default: Story = {
     alt: 'Hero Image Placeholder',
     height: 'medium',
     centered: true,
+    buttonLabel: 'Click Me',
+    heroOnClick: () => {},
   },
 }
 
@@ -50,6 +52,8 @@ export const NoImage: Story = {
     alt: 'No Image',
     height: 'medium',
     centered: true,
+    heroOnClick: () => {},
+    buttonLabel: 'go',
   },
 }
 
@@ -60,6 +64,8 @@ export const WithOverlay: Story = {
     height: 'medium',
     overlay: true,
     centered: true,
+    heroOnClick: () => {},
+    buttonLabel: 'go',
   },
 }
 
@@ -70,5 +76,7 @@ export const Disabled: Story = {
     height: 'medium',
     centered: true,
     disabled: true,
+    heroOnClick: () => {},
+    buttonLabel: 'go',
   },
 }

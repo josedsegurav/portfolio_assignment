@@ -10,5 +10,3 @@ services:
     container_name: segura_jose_coding_assignment14
     environment:
       - NODE_ENV=production
-    restart: 'no' # prevent auto-restart
-    remove: true
