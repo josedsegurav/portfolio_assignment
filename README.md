@@ -1,4 +1,4 @@
-# Portoflio
+# Portfolio
 
 A Docker-containerized Portfolio project for building and showcasing my skills and projects.
 
