@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   segura_jose_coding_assignment14:
     build:

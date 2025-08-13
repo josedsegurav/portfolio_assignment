@@ -1,13 +1,10 @@
 'use client'
-import { HeroImageComponent } from './components/HeroImage'
+import { HeroImageWithHydration } from './components/herohydratedcomponent'
 import { useRouter } from 'next/navigation'
 import { Table } from './components/Table'
 import { TableHeader } from './components/Table/TableHeader'
 import { TableRow } from './components/Table/TableRow'
 import { TableCell } from './components/Table/TableCell'
-import { CardComponent } from './components/Card'
-import { Text } from './components/Text'
-import { Image } from './components/Image'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 
@@ -17,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-gray-50 text-gray-800">
       <Navbar />
-      <HeroImageComponent
+      <HeroImageWithHydration
         title="I'm Jose Segura"
         subtitle="Full-Stack Web Developer"
         src="banner.png"
